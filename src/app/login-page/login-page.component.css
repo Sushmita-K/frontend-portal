@@ -1,0 +1,30 @@
+.loginCard{
+    width:350px;
+    display:flex;
+    justify-content: center;
+    margin:200px auto;
+    height:280px;
+}
+.textBox{
+    padding: 10px 0;
+}
+.labels{
+    font-weight: 600;
+    
+}
+
+.submitBtn{
+    background-color:blueviolet;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+.label{
+    font-size: 12px;
+    margin-top: -14px;
+    margin-left: 95px;
+}
+.message{
+    font-weight: 600;
+    color: red;
+    padding: 20px;
+}

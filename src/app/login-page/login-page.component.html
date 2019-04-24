@@ -1,0 +1,35 @@
+<mat-card class="loginCard">
+  <form [formGroup]="form">
+
+    <div class="form-group textBox">
+      <label class="labels" for="emailInput">EmailId</label> :
+      <mat-form-field>
+        <input matInput type="text" formControlName="email" class="form-control" placeholder="Enter your email">
+      </mat-form-field>
+      <div class="label">
+        <i style="color:red;" *ngIf="(form.controls.email.invalid) && (form.controls.email.touched)">Enter the
+          correct username</i>
+      </div>
+    </div>
+
+    <!-- Password -->
+    <div class="form-group textBox">
+      <label class="labels" for="passwordInput">Passsword</label> :
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" formControlName="password" [type]="hide ? 'password' : 'text'"
+          class="form-control">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </mat-form-field>
+      <div class="label">
+        <i style="color:red;" *ngIf="(form.controls.email.invalid) && (form.controls.password.touched)">Enter the
+          correct password</i>
+      </div>
+
+    </div>
+
+    <button mat-button class="btn btn primary submitBtn" (click)="onSubmit()" style="color:white" [disabled]="form.invalid">Submit</button>
+
+    <div class="message">{{messages}}</div>
+
+  </form>
+</mat-card>
