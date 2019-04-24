@@ -1,0 +1,42 @@
+<div class="bodyPage">
+  <h2>Schools</h2>
+  <table mat-table [dataSource]="obj1" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element">
+        <div [routerLink]="['/parent' ,element.externalId ]"> {{element.name}}
+        </div>
+      </td>
+
+    </ng-container>
+
+
+    <ng-container matColumnDef="externalId">
+      <th mat-header-cell *matHeaderCellDef> ExternalId </th>
+      <td mat-cell *matCellDef="let element">
+        <div [routerLink]="['/parent' ,element.externalId ]"> {{element.externalId}}
+        </div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef> Address </th>
+      <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="state">
+      <th mat-header-cell *matHeaderCellDef> State</th>
+      <td mat-cell *matCellDef="let element"> {{element.state}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="country">
+      <th mat-header-cell *matHeaderCellDef> Country</th>
+      <td mat-cell *matCellDef="let element"> {{element.country}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+</div>
