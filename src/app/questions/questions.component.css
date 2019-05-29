@@ -1,0 +1,72 @@
+/* @import '../../../../assets/scss/varibles.css'; */
+
+.question{
+    margin-top: 20px;
+    min-height: 400px;
+}
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+}
+/* .responsiveSurveyButton{
+    display: none;
+}
+.responsiveNextButton{
+    position: relative;
+    bottom: 0;
+    display: none;
+    height: 80px;
+    width: 96%;}
+    .btns {
+        margin-right: 20px; 
+        min-width: 100px;
+    }
+
+.question-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    white-space: wrap !important;
+}
+
+.next{
+    margin-right: 15px;
+}
+.questionFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 80px;}
+    .btns {
+        margin-right: 20px; 
+        min-width: 100px;
+    }
+
+.adjust {
+    margin-bottom: 20px
+}
+.btnColor{
+    background-color: blue;
+    color :white;
+}
+
+.completedsurvey {
+    color: green;
+    font-weight: 500;
+    margin-left: 20px;
+} */
+.btnss{
+    justify-content: flex-end;
+    margin: 180px 20px;
+    background-color:blueviolet;
+    color: white; 
+    float: left;
+}
+.btnss1{
+    background-color:blueviolet;
+    color: white; 
+    float: left;
+    margin-top:180px; 
+    margin-left:30px; 
+}

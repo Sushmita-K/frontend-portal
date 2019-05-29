@@ -1,4 +1,12 @@
 
 table {
-    width: 80%;
+    width: 100%;
   }
+  .btn1{
+    background-color:blueviolet;
+    color: white;
+}
+h2{
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+
+}

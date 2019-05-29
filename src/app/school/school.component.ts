@@ -15,7 +15,7 @@ import { Http, Headers } from '@angular/http';
 export class SchoolComponent implements OnInit {
   obj;
   obj1
-  displayedColumns: string[] = ['name', 'externalId', 'address', 'state', 'country'];
+  displayedColumns: string[] = ['name', 'externalId', 'address', 'state', 'country', 'button'];
   datasource;
   form: FormGroup;
   constructor(private config: ConfigService, private http: HttpClient, private router: Router) {
