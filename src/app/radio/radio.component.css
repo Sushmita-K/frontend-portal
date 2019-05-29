@@ -1,0 +1,12 @@
+.radio-adj {
+    margin: 10px 20px;
+}
+.radio {
+    font-size: 14px;
+}
+.wrap-mat-radio-label {
+    white-space: normal;
+}
+.justifyContentflexStart{
+justify-content: center;
+}

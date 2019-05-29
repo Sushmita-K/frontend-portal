@@ -1,0 +1,17 @@
+img{
+    width: 210px;
+    margin: 20px;
+    display: flex;
+    /* display: inline; */
+}
+h2{
+
+    float: right;
+    margin: -69px;
+    margin-right: 65px;
+    font-family: sans-serif;
+    font-size: 31px;
+}
+header{
+    border-bottom: 1px solid rgb(105, 102, 102);
+}

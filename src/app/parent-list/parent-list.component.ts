@@ -11,7 +11,7 @@ export class ParentListComponent implements OnInit {
   obj;
   obj1;
   schoolId;
-  displayedColumns: string[] = ['name', 'schoolId', 'phoneNumber', 'student', 'address'];
+  displayedColumns: string[] = ['name', 'phoneNumber', 'student', 'address', 'button'];
 
   constructor(private config: ConfigService, private route: ActivatedRoute) {
     this.route.params.subscribe(params => {

@@ -1,0 +1,11 @@
+<div class="_flex-direction-column _flex-box _justify-content-center">
+
+  <mat-radio-group [(ngModel)]="data.value" (change)="updated()" class="_flex-box _flex-wrap _justify-content-center justifyContentflexStart ">
+    <mat-radio-button class="radio-adj radio" *ngFor="let option of data?.options" [value]="option?.value">
+      <span class="wrap-mat-radio-label"> {{option?.label}}</span>
+
+    </mat-radio-button>
+  </mat-radio-group>
+  <!-- <app-remarks *ngIf="data?.showRemarks" [data]="data"></app-remarks> -->
+
+</div>
